@@ -1,29 +1,54 @@
 h1 {
     text-align: center;
+    background-color: #50586C;
+    color: #DCE2F0;
 }
 
 body {
-    position: flex;
-    align-items: center;
+
+}
+
+header {
+    display: inline-flex;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    height: 160px;
+}
+
+.nav {
+    margin-top: 30px;
+    float: right;
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    margin-right: 120px;
+}
+
+.header-img {
+    float: right;
+    width: 40%;
+    background-image: url(img/olympic_logo\ 5ring.png);
+    background-size: cover;
+    margin-right: 150px;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .background {
-    z-index: -1;
+    position: relative;
     width: 100%;
 }
-.background-img {
-    width: 30%;
-    float: left;
-}
+
+
 .container {
-    position: flex;
+    text-align: center;
     align-items: center;
-    margin: auto;
     width: 100%;
-    max-width: 1080px;
-    padding: 20px 30px;
     border: 1px black;
-    z-index: 3;
+    background-color: #DCE2F0;
 }
 
 .grid-container {
@@ -42,15 +67,6 @@ body {
     
 }
 
-img {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-header {
-    position: relative;
-}
-
 .slider {
     display: flex;
     width: 80%;
@@ -64,8 +80,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: white;
-    border: 2px black;
 }
 
 .caption-glorymoment {
