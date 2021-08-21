@@ -1,0 +1,25 @@
+* {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    margin : 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-size: cover;
+}
+#slider_background {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 880px;
+    z-index: -1;
+}
+
+#white_olympic_logo{
+    position: relative;
+    width: 20%;
+    height: auto;
+    z-index: 1;
+    margin-top: 100px;
+}

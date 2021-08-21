@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Memories of Olympic 2021</title>
-        <link rel="stylesheet" href="project.css">
+        <title>Sehan's Dynamic Web Programming Project</title>
+        <link rel="stylesheet" href="splash.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
     </head>
     <body>
-        <main>
-
-        </main>
+      <div id="slider_background"></div>
+      <img src="/project/img/splash/white-Tokyo2020_logo.png" id="white_olympic_logo">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+      <script type="text/javascript">
+        var images = ["/project/img/splash/splash-1.jpg","/project/img/splash/splash-2.jpg","/project/img/splash/splash-3.jpg","/project/img/splash/splash-4.jpg","/project/img/splash/splash-5.jpg","/project/img/splash/splash-6.jpg","/project/img/splash/splash-8.jpg","/project/img/splash/splash-7.jpg"];
+        $(function () {
+            var i = 0;
+            $("#slider_background").css("background-image", "url('" + images[i] + "')");
+            setInterval(function () {
+                i++;
+                if (i == images.length) {
+                    i = 0;
+                }
+                $("body").css("background-image", "url('" + images[i] + "')");
+                $("#slider_background").fadeOut("slow", function () {
+                    $(this).css("background-image", "url('" + images[i] + "')");
+                    $(this).fadeIn("slow");
+                });
+            }, 4000);
+        });
+      </script>
     </body>
+
 </html>

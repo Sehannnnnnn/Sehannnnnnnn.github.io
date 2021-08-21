@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<style>
+    #dvImage {
+
+    }
+</style>
+</head>
+
+<body id="dvImage" style="height: 1080px; width: 800px">
+  안녕하세요.
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    var images = ["/project/img/splash/spash-1.jpg","/project/img/splash/spash-2.jpg","/project/img/splash/spash-3.jpg","/project/img/splash/spash-4.jpg","/project/img/splash/spash-5.jpg","/project/img/splash/spash-6.jpg"];
+    $(function () {
+        var i = 0;
+        $("#dvImage").css("background-image", "url('/" + images[i] + "'')");
+        setInterval(function () {
+            i++;
+            if (i == images.length) {
+                i = 0;
+            }
+            $("#dvImage").fadeOut("slow", function () {
+                $(this).css("background-image", "url('" + images[i] + "'')");
+                $(this).fadeIn("slow");
+            });
+        }, 1000);
+    });
+</script>
+</body>
