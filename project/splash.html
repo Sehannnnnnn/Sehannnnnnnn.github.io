@@ -12,15 +12,27 @@
     </head>
     <body>
       <div id="slider_background"></div>
-      <img src="/project/img/splash/white-Tokyo2020_logo.png" id="white_olympic_logo">
+      <div id="blackfilter"></div>
+      <div id="white-border"></div>
+      <img src="/project/img/splash/white-Tokyo2020_logo.png" id="white_olympic_logo" onmouseover="hover(this);" onmouseout="unhover(this);">
+      <h1>도쿄 2020 다시보기</h1>
+      <p>2021년 7월 23일 – 2021년 8월 8일</p>
+      <ul class="nav">
+        <li><a href="/project/gallery.html">Gallery</a></li>
+        <li><a href="/project/medalist.html">Medalist</a></li>
+        <li><a href="/project/story.html">Story</a></li>
+        <li><a href="/project/games.html">Games</a></li>
+      </ul>
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script type="text/javascript">
+        // 배경이미지 전환 
         var images = ["/project/img/splash/splash-1.jpg","/project/img/splash/splash-2.jpg","/project/img/splash/splash-3.jpg","/project/img/splash/splash-4.jpg","/project/img/splash/splash-5.jpg","/project/img/splash/splash-6.jpg","/project/img/splash/splash-8.jpg","/project/img/splash/splash-7.jpg"];
         $(function () {
             var i = 0;
             $("#slider_background").css("background-image", "url('" + images[i] + "')");
             setInterval(function () {
                 i++;
+                j++;
                 if (i == images.length) {
                     i = 0;
                 }
@@ -31,6 +43,15 @@
                 });
             }, 4000);
         });
+        // nav 강조 변환
+
+        function hover(element) {
+          element.setAttribute('src', '/project/img/splash/tokyo-2020-olympics-logo-42C6B13453-seeklogo.com.png');
+        }
+
+        function unhover(element) {
+          element.setAttribute('src', '/project/img/splash/white-Tokyo2020_logo.png');
+        }
       </script>
     </body>
 
