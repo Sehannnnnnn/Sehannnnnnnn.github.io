@@ -9,11 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-        <script src="gallery.js"></script>
-        <script src="slick/slick.min.js"></script>
+        <!-- slick cdn -->
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             rel="stylesheet"
@@ -23,52 +20,102 @@
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
-        <div id = "header">
-            <img src = "img/olympic_logo 5ring.png" class="header-img">
+        <div id="header">
+            <img src="img/olympic_logo 5ring.png" class="header-img">
             <br>
-            <div class = "nav">
-                <li><a class="active" href="gallery.html">Gallery</a></li>
-                <li><a href="medalist.html">Medalist</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="game.html">Game</a></li>
+            <div class="nav">
+                <li>
+                    <a class="active" href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="medalist.html">Medalist</a>
+                </li>
+                <li>
+                    <a href="story.html">Story</a>
+                </li>
+                <li>
+                    <a href="game.html">Game</a>
+                </li>
             </div>
             <hr>
         </div>
-        <div id="contents">
-            <h1>영광의 순간 in Tokyo</h1>
-            <div class="slider">
-                <div>
-                    <figure class="set-glorymomnet">
-                        <img
-                            src="img/kor_jaeduck.jpeg"
-                            alt="slider-img01">
-                        <figcaption class="caption-glorymoment">'양궁 막내' 안산·김제덕, 한국 첫 금메달 안겼다</figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure class="set-glorymomnet">
-                        <img
-                            src="img/male-pencing.jpg"
-                            alt="slider-img02">
-                        <figcaption class="caption-glorymoment">9년 걸린 올림픽 2연패…펜싱 남자 사브르 단체 '금메달'</figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <figure class="set-glorymomnet">
-                        <img
-                            src="img/female-vallyball.jpg"
-                            alt="slider-img03">
-                        <figcaption class="caption-glorymoment">4위로 마친 ‘감동의 여정’…여자배구는 올림픽 그 자체였다</figcaption>
-                    </figure>
-                </div>
+        <div id="contents_container">
+            <div id="contents">
+                <h1>영광의 순간 in Tokyo</h1>
+                <section class="vertical-center">
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="http://www.inews24.com/view/1388614">
+                                <figcaption class="caption-glorymoment">'양궁 막내' 안산·김제덕, 한국 첫 금메달 안겼다</figcaption>
+                                <img src="img/gallery/kor_jaeduck.jpeg" alt="slider-img01"></a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="https://news.kbs.co.kr/news/view.do?ncd=5244053">
+                                <figcaption class="caption-glorymoment">9년 걸린 올림픽 2연패…펜싱 남자 사브르 단체 '금메달'</figcaption>
+                                <img src="img/gallery/male-pencing.jpg" alt="slider-img02"></a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="https://www.hani.co.kr/arti/sports/sportstemp/1006813.html">
+                                <figcaption class="caption-glorymoment">4위로 마친 ‘감동의 여정’…여자배구는 올림픽 그 자체였다</figcaption>
+                                <img src="img/gallery/female-vallyball.jpg" alt="slider-img03"></a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="https://www.insight.co.kr/news/351166">
+                                <figcaption class="caption-glorymoment">김민정, 여자 권총사격 25m '은메달' 쾌거</figcaption>
+                                <img src="img/gallery/woman-pistol25m.jpg" alt="slider-img04"></a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="https://www.joongang.co.kr/article/24119699#home">
+                                <figcaption class="caption-glorymoment">신재환 남자 도마 금메달…새로운 체조 황제 탄생</figcaption>
+                                <img src="img/gallery/man-doma.jpg" alt="slider-img05"></a>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure class="set-glorymomnet">
+                            <a href="https://m.news.nate.com/view/20210726n36988">
+                                <figcaption class="caption-glorymoment">[도쿄 올림픽] 이번엔 남자다! 한국 남자 양궁, 역대 6번째 단체전 金 달성</figcaption>
+                                <img src="img/gallery/man-archery.jpg" alt="slider-img06"></a>
+                        </figure>
+                    </div>
+                </section>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+        <script text="type/javascript">
+        $(document).ready(function(){
+            $(".vertical-center").slick({
+                dots: true,
+                vertical: true,
+                centerMode: true,
+            });
+        });
+            
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        //navigation hover 애니메이션
+        var nav = document.getElementsByTagName('li');
+
+        nav.addEventListener('mouseover', function() {
+        nav.setAttribute('class','hover');
+        });
+
+        nav.addEventListener('mouseout',function(){
+        nav.removeAttribute('class');
+        });
+
+        </script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-
+            src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="slick/slick.min.js"></script>
     </body>
 </html>
