@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sehan's Dynamic Web Programming Project</title>
+        <link rel="stylesheet" href="/project/gallery.css">
+        <link rel="stylesheet" href="/project/game.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <a href="/project/splash.html"><img src="img/olympic_logo 5ring.png" class="header-img"></a>
+            <br>
+            <div class="nav">
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="medalist.html">Medalist</a>
+                </li>
+                <li>
+                    <a class="active" href="game.html">Game</a>
+                </li>
+            </div>
+            <hr>
+        </div>
+        <div id="contents_container">
+            <div id="contents">
+                <h1>2020 Tokyo 돌아보기 OX 퀴즈</h1>
+                <p style="margin-bottom: 10px;">
+                    뜨거웠던 도쿄올림픽, 당신은 얼마나 알고 있나요?<br>
+                나의 점수 확인하기</p>
+                <div id="quiz_block">
+                    <p>문제는 총 8문항니다. 기억을 되살려 문제를 풀어보세요.</p>
+                    <div id="quiz">
+                        <p id="question"></p>
+                        <div class="buttons">
+                            <button class="btn" id="o_btn"></button>
+                            <button class="btn" id="x_btn"></button>
+                        </div>
+                        <p id="correctcheck" class = ""></p>
+                        <p id="solution"></p>
+                        
+                        <button id="next_btn" disabled="disabled">next</button>
+                        <footer>
+                            <p id="progress">문제 x of y.</p>
+                        </footer>
+                        <div id="image_container">
+                            <div class="image_zone" id="image_zone1"></div>
+                            
+                            <div class="image_zone" id="image_zone2"></div>	
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="/project/game.js"></script>
+    </body>
+</html>
