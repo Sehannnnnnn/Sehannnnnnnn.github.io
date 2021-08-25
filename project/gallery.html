@@ -5,9 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sehan's Dynamic Web Programming Project</title>
-        <link rel="stylesheet" href="gallery.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
         <!-- slick cdn -->
         <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -18,6 +15,21 @@
             crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <link
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous">
     </head>
     <body>
         <div id="header">
@@ -41,78 +53,165 @@
                 <h1>영광의 순간 in Tokyo</h1>
                 <p style="margin-bottom: 10px;">대한민국이 하나되어 응원했던 도쿄올림픽 국가대표들의 순간을 모아<br>
                 이미지를 눌러 기사보기</p>
-                <section class="vertical-center">
+                <section class="center">
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/kor_jaeduck.jpeg" alt="slider-img01">
                             <a href="http://www.inews24.com/view/1388614">
                                 <figcaption class="caption-glorymoment">🥇'양궁 막내' 안산·김제덕, 한국 첫 금메달 안겼다</figcaption>
-                                <img src="img/gallery/kor_jaeduck.jpeg" alt="slider-img01"></a>
-                        </figure>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/male-pencing.jpg" alt="slider-img02">
                             <a href="https://news.kbs.co.kr/news/view.do?ncd=5244053">
                                 <figcaption class="caption-glorymoment">🥇 9년 걸린 올림픽 2연패…펜싱 남자 사브르 단체 '금메달'</figcaption>
-                                <img src="img/gallery/male-pencing.jpg" alt="slider-img02"></a>
-                        </figure>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/female-vallyball.jpg" alt="slider-img03">
                             <a href="https://www.hani.co.kr/arti/sports/sportstemp/1006813.html">
                                 <figcaption class="caption-glorymoment">🏐 4위로 마친 ‘감동의 여정’…여자배구는 올림픽 그 자체였다</figcaption>
-                                <img src="img/gallery/female-vallyball.jpg" alt="slider-img03"></a>
-                        </figure>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/woman-pistol25m.jpg" alt="slider-img04">
                             <a href="https://www.insight.co.kr/news/351166">
                                 <figcaption class="caption-glorymoment">🥈 김민정, 여자 권총사격 25m '은메달' 쾌거</figcaption>
-                                <img src="img/gallery/woman-pistol25m.jpg" alt="slider-img04"></a>
-                        </figure>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/man-doma.jpg" alt="slider-img05">
                             <a href="https://www.joongang.co.kr/article/24119699#home">
                                 <figcaption class="caption-glorymoment">🥇 신재환 남자 도마 금메달…새로운 체조 황제 탄생</figcaption>
-                                <img src="img/gallery/man-doma.jpg" alt="slider-img05"></a>
-                        </figure>
+                            </a>
+                        </div>
                     </div>
                     <div>
-                        <figure class="set-glorymoment">
+                        <div class="slick_item">
+                            <img src="img/gallery/man-archery.jpg" alt="slider-img06">
                             <a href="https://m.news.nate.com/view/20210726n36988">
-                                <figcaption class="caption-glorymoment">🥇 [도쿄 올림픽] 이번엔 남자다! 한국 남자 양궁, 역대 6번째 단체전 金 달성</figcaption>
-                                <img src="img/gallery/man-archery.jpg" alt="slider-img06"></a>
-                        </figure>
+                                <figcaption class="caption-glorymoment">🥇 [도쿄 올림픽] 이번엔 남자다! 한국 남자 양궁, 역대 6번째 단체전 金</figcaption>
+                            </a>
+                            </div>
                     </div>
                 </section>
+                <div class = "detail_section">
+                    <h2 id = "detail_title2"></h2>
+                    <h1 id = "detail_title"></h1>
+                    <div id = "youtube"></div>
+                    <p id = "detail_text"></p>
+                    <button id = "prev_article">이전 기사보기</button>
+                    <button id = "next_article">다음 기사보기</button>
+                </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
         <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
         <script text="type/javascript">
-        $(document).ready(function(){
-            $(".vertical-center").slick({
-                dots: true,
-                vertical: true,
-                centerMode: true,
-                autoplay: true,
-                autoplaySpeed: 3000,
+            $('.center').slick({
+            dots : true,
+            infinite: true,
+            centerMode: true,
+            centerPadding: '70px',
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
             });
-        });
             
+            var detail_contents = {
+                title : ["🥇'양궁 막내' 안산·김제덕, 한국 첫 금메달 안겼다", "🥇 9년 걸린 올림픽 2연패…펜싱 남자 사브르 단체 '금메달", 
+            "🏐 4위로 마친 ‘감동의 여정’…여자배구는 올림픽 그 자체였다", "🥈 김민정, 여자 권총사격 25m '은메달' 쾌거", "🥇 신재환 남자 도마 금메달…새로운 체조 황제 탄생",
+            "🥇 [도쿄 올림픽] 이번엔 남자다! 한국 남자 양궁, 역대 6번째 단체전 金 달성"],
+                title2 : ['도쿄올림픽 소식','도쿄올림픽 소식','도쿄올림픽 소식','도쿄올림픽 소식','도쿄올림픽 소식','도쿄올림픽 소식',],
+                text: ['네덜란드와의 결승에서 1세트를 먼저 내준 김제덕이 2세트를 앞두고 목청껏 기합을 넣습니다. 그리고 2세트를 1점 차로 가져가더니 3세트도 상대가 6점을 쏘는 실수를 놓치지 않고 챙기면서 역전에 성공했습니다. 마지막 4세트에서 김제덕은 자신의 두 발을 모두 10점 과녁에 쐈고, 안산도 10점과 9점을 쏴 세트 포인트 5대 3의 대역전극을 마무리했습니다. 양궁 대표팀 남녀 막내인 김제덕과 안산은 이번 대회에 신설된 양궁 혼성 단체전의 첫 올림픽 챔피언에 등극했습니다. 이와 동시에 대한민국 도쿄올림픽 선수단 전체에도 첫 번째 메달이자 금메달을 선사했습니다. 17세에 한국 양궁 역사상 최연소 메달리스트가 된 김제덕은 꿈 이야기를 통해 더 많은 메달에 대한 욕심을 슬쩍 내비쳤습니다.',
+            '이날 대표팀은 명성에 걸맞게 압도적인 경기를 펼쳤다. 9개 피리어드를 지나며 한번도 우세를 빼앗기지 않았다. 화끈한 공격력은 덤이었다. 경기 초반부터 상대를 거침없이 몰아쳤다. 쉴 새 없는 공방 속에 경기장은 침묵과 환호를 반복했다. 팽팽한 대치 때는 침 삼키는 소리까지 들릴 정도의 침묵이 흘렀고, 득점이 날 때면 목까지 차올랐던 함성이 곳곳에서 터져 나왔다.한편 세계 1위 오상욱은 이날 맹활약하며 자신의 실력을 전세계에 증명했다. 오상욱은 이날 2피리어드에 나와 상대 알도 몬타노를 5-0으로 제압하는 등 폭발적인 활약을 펼쳤다. 오상욱은 지난 3월 코로나19에 감염돼 어려움을 겪기도 했지만, 꾸준한 훈련으로 실력을 유지해왔다. 김정환은 개인전 동메달에 이어 단체전 금메달을 추가했다.',
+            '한국 여자배구의 올림픽 드라마가 4위로 마무리됐다. 메달은 없었지만, 스포츠의 진가를 보여준 여정이었다. 한국은 8일 일본 도쿄 아리아케 아레나에서 열린 2020 도쿄올림픽 여자배구 동메달 결정전 세르비아와 경기에서 0-3(18:25/15:25/15:25)으로 패했다. 한국은 2012 런던올림픽에 이어 9년 만에 올림픽 4위에 올랐다. 이번 대회에서 여자배구팀은 올림픽이 무엇인지를 보여줬다. 일본과의 조별리그 경기는 끝까지 포기하지 않는 모습으로 투지가 무엇인지를 보여줬고, 8강전에서는 강팀 터키를 꺾으며 기적을 썼다. 한편 한편 놓칠 수 없는 명작 드라마였다. 사람들이 올림픽에서 무엇을 원하는지, 스포츠가 어떤 감동을 줄 수 있는지를 보여준 교과서와도 같았다.',
+            '사격 국가대표 김민정(24·KB국민은행)이 도쿄올림픽 여자 25m 권총에서 값진 은메달을 수확했다. 한국 사격이  이번 올림픽에서 딴 첫 번째 메달이다. 김민정은 30일 도쿄 아사카 사격장에서 열린 도쿄올림픽 사격 여자 25m 권총 결선에서 비탈리나 바차라시키나(러시아올림픽위원회)와 슛오프 접전 끝에 은메달을 목에 걸었다. 극적인 반전 드라마였다. 김민정은 29일 완사 경기에서 291점, 30일 급사 경기에서 293점을 각각 쏴 전체 8위(합계 584점·평균 9.733점)로 결선에 턱걸이했다. 급사로 총 50발을 쏴야 하는 결선에서는 처음부터 선두권으로 치고 나갔다. 8명의 선수가 15발씩(5발씩 3시리즈) 쏘는 첫 스테이지에서 14점을 기록해 1위로 올라섰다. 점수가 낮은 순으로 한 명씩 탈락하는 4시리즈 이후에도 바차라시키나(러시아올림픽위원회)와 공동 선두를 유지했다',
+            '한국 남자 체조의 기대주 신재환(23·제천시청)이 ‘도마의 왕’으로 거듭났다. 처음으로 출전한 올림픽에서 금메달을 따냈다. 신재환은 2일 일본 도쿄 아리아케 체조경기장에서 열린 2020 도쿄올림픽 남자 기계체조 도마 결선에서 1, 2차 시기 평균 14.783점을 획득했다. 데니스 아블랴진(ROC)과 평균 점수가 같았지만, 타이브레이커 규정에 따라 금메달을 차지했다. 도마에선 평균점수가 같으면 1, 2차 시기 중 최고점이 높은 선수가 승자가 된다. 신재환은 2차 시기에서 14.833을 받아 14.800을 받은 야블라진에게 0.33점 앞섰다. 2012년 런던올림픽에서 남자 기계체조 도마 부문에서 금메달을 목에 건 양학선(29·수원시청) 이후로 처음이다.',
+            '한국 남자 양궁 대표팀이 단체전 금메달을 목에 걸었습니다. 오진혁, 김우진, 김제덕 선수로 구성된 양궁 남자 대표팀은 26일 일본 도쿄 유메노시마 공원 양궁장에서 열린 2020 도쿄올림픽 양궁 남자 단체전 타이완과의 결승에서 1, 2, 3세트를 모두 쓸어담으며 세트포인트 6-0으로 승리했습니다. 한국은 결승전 1세트에서 6발 중 5발을 10점에 명중시키며 처음부터 압도적 경기력을 선보였는데요. 이어진 2세트와 3세트에서 흔들림 없는 경기력으로 올림픽 2회 연속 금메달의 위업을 달성했습니다.']
+            }
 
-        //navigation hover 애니메이션
-        var nav = document.getElementsByTagName('li');
+            var youtube_link = [
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/rMJ7ZgK4arw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/M5sY74c2lko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/rABStJi6BOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/NgQSmxBndy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/BsbmOe6F77A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/avJ90GgdOWk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+            ]
 
-        nav.addEventListener('mouseover', function() {
-        nav.setAttribute('class','hover');
-        });
+            function detail_init(index) {
+                var _title = document.getElementById('detail_title');
+                var _title2 = document.getElementById('detail_title2');
+                var _text = document.getElementById('detail_text');
+                var _youtube = document.getElementById('youtube');
 
-        nav.addEventListener('mouseout',function(){
-        nav.removeAttribute('class');
-        });
+                _title.innerHTML = detail_contents.title[index];
+                _title2.innerHTML = detail_contents.title2[index];
+                _text.innerHTML = detail_contents.text[index];
+                _youtube.innerHTML = youtube_link[index];
+            }
 
+            detail_init(0);
+
+            //기사 버튼 조작
+            var i = 0;
+            var prev_btn = document.getElementById('prev_article');
+            var next_btn = document.getElementById('next_article');
+
+            prev_btn.addEventListener('click', function() {
+                i--;
+                if (i<0) {
+                    i = 5;
+                    detail_init(i);
+                } else {
+                    detail_init(i);
+                }
+                
+            });
+
+            next_btn.addEventListener('click', function() {
+                i++
+                if (i>5) {
+                    i = 0;
+                    detail_init(i);
+                } else {
+                    detail_init(i);    
+                }
+            })
+            
+            
+        //꽃가루
         </script>
+        <script type="text/javascript" src="/project/gallery.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
         <script

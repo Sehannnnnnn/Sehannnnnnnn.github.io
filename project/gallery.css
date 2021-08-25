@@ -12,7 +12,7 @@ body {
     display: inline-block;
 }
 
-h1, h2{
+h1, h2, p{
     color:white;
     margin: 0 0;
     margin-top: 15px;
@@ -66,13 +66,14 @@ a {
 }
 
 
+
+
 .nav {
     width: 100%;
     list-style-type: none;
     font-size: 20px;
     text-align: center;
     margin: 0 auto;
-    justify-content: center;
     background-color: white;
 }
 
@@ -131,6 +132,7 @@ a {
 .grid-container > div {
     text-align: center;
     justify-content: center;
+    display: relative;
 }
 
 .medal_color {
@@ -142,27 +144,69 @@ a {
 
 
 .caption-glorymoment {
-    margin-bottom: 10px;
-    font-size: 28px;
-    font-weight: 300;
-    text-align: center;
+    text-align: left;
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 24px;
+    color: black;
 }
 
-.vertical-center img {
-    margin: 0 auto;
-    width: auto;
-    height: 600px;
-}
-
-.set-glorymoment {
+.set-glorymoment  {
     border: 1px inset black;
     margin: 20px 40px;
 }
 
-.vertical-center {
+.center {
+    display: absolute;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -650px;
+    width: 1300px;
+    margin-bottom: 200px;
     background-color: white;
     border-radius: 20px;
     border: 2px solid black;
+}
+
+.slick_item {
+    
+}
+
+.slick_item > img {
+    width: 100%;
+    height: 75%;
+}
+
+.detail_section{
+    display: absolute;
+    left: 50%;
+    margin-top: 10px;
+    width: 1300px;
+    background-color: white;
+    padding: 10px 20px;
+
+}
+
+.detail_section > h1,
+.detail_section > h2,
+.detail_section > p
+{   
+    margin: 0 0;
+    color: black;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.detail_section > div {
+    margin-bottom: 15px;
+}
+
+.detail_section > h2 {
+    font-size: 20px;
+}
+
+.detail_section > h1 {
+    font-size: 24px;
 }
 
 .item {
@@ -207,3 +251,4 @@ a {
     background-color: rgba(255, 202, 88, 0.849);
     color: black;
 }
+
