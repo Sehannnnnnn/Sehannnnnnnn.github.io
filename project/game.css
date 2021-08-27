@@ -11,6 +11,10 @@
     padding-top: 20px;
 }
 
+#solution {
+    color: black;
+}
+
 #image_container {
     width: 100%;
     height: auto;
@@ -40,6 +44,7 @@
 
 #question {
     font-size: 22px;
+    color: black;
 }
 
 .btn {

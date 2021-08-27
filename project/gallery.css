@@ -215,6 +215,10 @@ a {
     text-align: center;
 }
 
+#item-hover {
+    border: 3px solid red;
+}
+
 .item_none {
     border: none;
     position: relative;
