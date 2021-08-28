@@ -16,10 +16,7 @@
 }
 
 #image_container {
-    width: 100%;
-    height: auto;
-    position: relative;;
-    bottom: 0px;
+
 }
 
 .image_zone {
@@ -37,9 +34,10 @@
     margin-left: 30px;
 }
 #image_zone2 {
+    position: absolute;
     bottom: 0;
     right: 0;
-    margin-left: 510px;
+    margin-left: 480px;
 }
 
 #question {
