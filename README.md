@@ -19,19 +19,18 @@ HTML, CSS, JavaScript에 대한 기초 지식을 이해하고 활용하여, 각�
 
 - Splash
     - 배경 전환 구현, NavBar 구현
-        
-
-        
+        <img width="663" alt="스크린샷 2022-02-05 오후 4 41 43" src="https://user-images.githubusercontent.com/79133770/152633382-d5cd0e77-5149-4400-b652-fe7ace91fbad.png">
+    
 
 - Gallery
     - Silck 모듈 : 이미지 슬라이더  구현
-    <img width="667" alt="스크린샷 2022-02-05 오후 4 42 03" src="https://user-images.githubusercontent.com/79133770/152633341-8d5ca239-0935-465a-89e9-006bdeecad88.png">
+        <img width="697" alt="스크린샷 2022-02-05 오후 4 41 50" src="https://user-images.githubusercontent.com/79133770/152633384-79985921-c8aa-49eb-81f6-c6cc99a94e1f.png">
 
     
 - Medalist
     - 꽃가루 애니메이션 구현
-        
-        ![스크린샷 2022-02-04 오전 3.17.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f1956fde-1a1b-41a5-baa9-8aa374715015/스크린샷_2022-02-04_오전_3.17.39.png)
-        
+        <img width="666" alt="스크린샷 2022-02-05 오후 4 41 56" src="https://user-images.githubusercontent.com/79133770/152633387-a9f9309c-677b-43dd-a5a1-9f4d0e7904fd.png">
+
 - Game
     - OX 퀴즈 구현
+        <img width="667" alt="스크린샷 2022-02-05 오후 4 42 03" src="https://user-images.githubusercontent.com/79133770/152633395-db2d42a1-c836-4910-ad50-7900e81a6044.png">
